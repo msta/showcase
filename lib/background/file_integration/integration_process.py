@@ -1,24 +1,3 @@
-import os
-import zlib
-from calendar import timegm
-from collections import defaultdict
-from datetime import datetime, timedelta
-from email.utils import parsedate_tz
-from io import BytesIO
-
-import archii.database as db
-from archii import config
-from archii.background.core.notifier import Notifier
-from archii.background.core.similar_process import similar_documents_task
-from archii.background.file_integration.document_meta import DocumentMeta
-from archii.background.file_integration.services.strategy import \
-    IntegrationStrategy, FileMetaData
-from archii.database import Scan
-from archii.database.models import IntegrationAlreadyDone
-from archii.files.storage import StorageFactory
-from archii.log import Log
-from archii.services.email import EmailFactory
-from archii.templates import TEMPLATES
 
 
 def _convert_timestamp(date):
