@@ -1,0 +1,5 @@
+# Excluding python potentially caching directories
+build
+dist
+venv
+.git

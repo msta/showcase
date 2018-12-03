@@ -1,0 +1,117 @@
+t/*
+
+# IDES
+.vscode
+
+# SonarQube stuff
+*.scannerwork/
+
+*.pyc
+*.class
+
+.noseids
+
+*.zip
+aws_credentials
+
+#Temporary upload files
+file_uploads/
+tmp/*
+venv*
+tmp_copies
+.cache/*
+*.icloud
+
+### This script is ignored for the individual developer to maintain
+go-dev.sh
+
+stdout.txt
+
+dbdump/
+database/build/
+database/dist/
+
+lib/background/core/task_manager.log.sqlite
+
+build/
+dist/
+
+# Egg files
+*.egg*
+
+# Ignoring key used in Dockerfile in case it is included in the repo accidently
+id_rsa
+
+# Ignoring logs
+*.log
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+
+
+# Flask stuff:
+*.log
+*.log\.*
+
+
+# PyBuilder
+target/
+
+
+# PyCharm stuff
+.idea/
+
+# OSX
+.DS_Store
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+!archii/background/logs/.gitkeep
+archii/background/logs/
+
+* tmp files
+archii/api/services/file_convertion/tmp/*
+!archii/api/services/file_convertion/tmp/.gitkeep
+test/tmp
+test/tmp_copies/
+test/mock_file.txt
+test/app.log
+
+# file uploads
+archii/out/file_storage
+
+*.png
+*.jpg
+*.jpeg
+
+# Archii config file override
+config.yml
